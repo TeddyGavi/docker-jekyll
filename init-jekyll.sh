@@ -30,14 +30,14 @@ jekyll -v
 # jekyll new . --skip-bundle --force --blank
 blank_site=false
 read -p "Would you like to create a blank Jekyll site? (y/n): " blank_site 
-if [ $blank_site != 'y' ] && [ $blank_site != "Y"] then
+if [ "$blank_site" != 'y' ] && [ "$blank_site" != 'Y' ]; then
     # Add Jekyll site
-    echo "Creating a new Jekyll site with the default theme${green}Minima${rest}"
-    jekyll new . --skip-bundle --force
+    echo "Creating a new Jekyll site with the default theme ${green}Minima${rest}"
+    jekyll new . --force --skip-bundle
     else
     #New blank site
     echo "Create a new ${green}Jekyll${reset} blank site"
-    jekyll new . --skip-bundle --force --blank
+    jekyll new . --force --skip-bundle --blank
 fi
 
 
