@@ -1,12 +1,18 @@
 #!/bin/sh
-# This file will take the preloaded jekyll theme and load all the "invisible" files so they are available to edit
-# Makes the theme editable 
-echo "Copying theme files..."
+# "#################################################"
+#
+# The following will take the preloaded jekyll theme and load all the "invisible" files so they are available to edit
+# Makes the theme easiely editable 
+#
+# "#################################################"
 
 # Define color codes
 red='\033[0;31m'
 green='\033[0;32m'
+cyan='\033[36m'
 reset='\033[0m' # Reset color
+
+echo "Copying theme files..."
 
 config_file="_config.yml"
 
@@ -51,7 +57,8 @@ done
 
 # Prompt user for confirmation if files are being overwritten
 if [ "$overwrite" = true ]; then
-  read -p "Files already exist in the current directory. Do you want to overwrite them? (y/n): " overwrite_confirmation
+  echo "Files already exist in the current directory. If you ${cyan}haven't modified${reset} the theme it is ${green}safe${reset} to say 'y'" 
+  read -p "Do you want to overwrite them?(y/n): " overwrite_confirmation
 
   if [ "$overwrite_confirmation" != "y" ] && [ "$overwrite_confirmation" != "Y" ]; then
     echo "Aborted. No files will be overwritten."
