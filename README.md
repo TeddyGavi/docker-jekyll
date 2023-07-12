@@ -2,12 +2,11 @@
 
 ![Make Jekyll Great Again](./assets/repository-docker-jekyll.png)
 
-The template that takes you from zero to a deployed Jekyll blog starter in 4 steps 🚀
+The template that takes you from zero to a deployed Jekyll blog starter in 3 steps 🚀
 
-1. Use this template to create your own repo and clone your repo 👽
-2. Set up GitHub pages to use "from action" (BETA) 🤞
-3. Run shell scripts 🐚
-4. Push all your new code to your remote repo and wait for your new site 🧙‍♂️
+1. Use this template to create your own repo and clone your repo 👽 then Set up GitHub pages to use "from action" (BETA) 🤞
+2. Run shell scripts 🐚
+3. Push all your new code to your remote repo and wait for your new site 🧙‍♂️
 
 Inspired by [Bill Raymond](https://github.com/BillRaymond) thank you so much!
 
