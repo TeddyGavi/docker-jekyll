@@ -1,6 +1,6 @@
 # Docker and Jekyll
 
-<!-- ![Make Jekyll Great Again](./assets/repository-docker-jekyll.png) -->
+![Make Jekyll Great Again](./assets/repository-docker-jekyll.png)
 
 The template that takes you from zero to a deployed Jekyll blog starter in 3 steps 🚀
 
